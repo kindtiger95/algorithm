@@ -23,5 +23,8 @@
     <ClInclude Include="include\Backjoon\Q1406.hpp">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="include\Backjoon\Q17298.hpp">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
