@@ -1,6 +1,6 @@
-package part2
+package chapter3
 
-class Part2 {
+class Chapter3 {
     companion object {
         // 실전문제 2번, p.92
         fun practicalProblem2(m: Int, k: Int, numberArray: List<Int>): Int {
