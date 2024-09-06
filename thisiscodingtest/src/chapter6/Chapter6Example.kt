@@ -22,6 +22,7 @@ class Chapter6Example {
             println(array.joinToString(","))
         }
 
+        // Todo-Check.
         fun insertSort() {
             val array = arrayOf(7, 5, 9, 0, 3, 1, 6, 2, 4, 8)
             for (i in 1..<array.size) {
@@ -34,6 +35,7 @@ class Chapter6Example {
             println(array.joinToString(","))
         }
 
+        // Todo-Check.
         fun quickSort(start: Int, end: Int, array: Array<Int>) {
             if (start >= end) {
                 return
