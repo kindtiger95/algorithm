@@ -4,7 +4,7 @@ import chapter3.Chapter3
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
-class Chapter3Test {
+class JChapter3Test {
     @Test
     fun practicalProblem2Test_1() {
         assertEquals(Chapter3.practicalProblem2(8, 3, listOf(2, 4, 5, 4, 6)), 46)
