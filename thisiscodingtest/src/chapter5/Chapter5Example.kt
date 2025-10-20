@@ -56,14 +56,15 @@ class Chapter5Example {
             val isVisited = Array(9) { false }
             queue.add(1)
             isVisited[1] = true
+            println(1)
             while (true) {
                 val currentNode = queue.poll()
-                println(currentNode)
                 val linkList = grape[currentNode]
                 linkList.forEach {
                     if (isVisited[it]) {
                         return@forEach
                     }
+                    println(it)
                     queue.add(it)
                     isVisited[it] = true
                 }

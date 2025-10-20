@@ -3,25 +3,33 @@ package chapter;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 class Chapter4Test {
     final Chapter4 chapter4 = new Chapter4();
 
     @Test
-    void example1Test() {
-        int[] result = chapter4.example1(5, new String[]{"R", "R", "R", "U", "D", "D"});
-        assertEquals(result[0], 3);
-        assertEquals(result[1], 4);
-
-        int[] result2 = chapter4.example1(7, new String[]{"U", "U", "L", "R", "R", "R", "U", "D", "D", "D" });
-        assertEquals(result2[0], 4);
-        assertEquals(result2[1], 4);
+    void exampleProblem1Test() {
+        String result = chapter4.exampleProblem1("R R R U D D", 5);
+        Assertions.assertEquals(result, "3 4");
     }
 
     @Test
-    void example2Test() {
-        int result = chapter4.example2(5);
-        assertEquals(result, 11475);
+    void exampleProblem2Test() {
+        int result = chapter4.exampleProblem2(5);
+        Assertions.assertEquals(result, 11475);
+    }
+
+    @Test
+    void practicalProblem2Test() {
+        int result = chapter4.practicalProblem2("a1");
+        Assertions.assertEquals(result, 2);
+
+        int result2 = chapter4.practicalProblem2("d5");
+        Assertions.assertEquals(result2, 8);
+    }
+
+    @Test
+    void practicalProblem3Test() {
+        int result = chapter4.practicalProblem3(new int[][]{ {1, 1, 1, 1}, {1, 0, 0, 1}, {1, 1, 0, 1}, {1, 1, 1, 1}}, new int[]{ 1, 1}, 0);
+        Assertions.assertEquals(result, 3);
     }
 }
